@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="media/css/bootstrap-timepicker.css" />
 <link rel="stylesheet" href="media/css/daterangepicker.css" />
 <link rel="stylesheet" href="media/css/colorpicker.css" />
+<link rel="stylesheet" href="media/css/fullcalendar.css" />
+<link rel="stylesheet" href="media/css/colorbox.css" />
 
 <!-- ace styles -->
 <link rel="stylesheet" href="media/css/ace.min.css" />
