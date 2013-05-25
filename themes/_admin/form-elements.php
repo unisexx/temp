@@ -247,7 +247,7 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                      <a href="index.html">
+                      <a href="index.php">
                         <i class="icon-dashboard"></i>
                         <span>Dashboard</span>
                         
@@ -256,7 +256,7 @@
 
                     
                     <li>
-                      <a href="typography.html">
+                      <a href="typography.php">
                         <i class="icon-text-width"></i>
                         <span>Typography</span>
                         
@@ -271,14 +271,14 @@
                         <b class="arrow icon-angle-down"></b>
                       </a>
                       <ul class="submenu">
-                        <li><a href="elements.html"><i class="icon-double-angle-right"></i> Elements</a></li>
-                        <li><a href="buttons.html"><i class="icon-double-angle-right"></i> Buttons & Icons</a></li>
+                        <li><a href="elements.php"><i class="icon-double-angle-right"></i> Elements</a></li>
+                        <li><a href="buttons.php"><i class="icon-double-angle-right"></i> Buttons & Icons</a></li>
                       </ul>
                     </li>
 
                     
                     <li>
-                      <a href="tables.html">
+                      <a href="tables.php">
                         <i class="icon-list"></i>
                         <span>Tables</span>
                         
@@ -293,14 +293,14 @@
                         <b class="arrow icon-angle-down"></b>
                       </a>
                       <ul class="submenu">
-                        <li class="active"><a href="form-elements.html"><i class="icon-double-angle-right"></i> Form Elements</a></li>
-                        <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i> Wizard & Validation</a></li>
+                        <li class="active"><a href="form-elements.php"><i class="icon-double-angle-right"></i> Form Elements</a></li>
+                        <li><a href="form-wizard.php"><i class="icon-double-angle-right"></i> Wizard & Validation</a></li>
                       </ul>
                     </li>
 
                     
                     <li>
-                      <a href="widgets.html">
+                      <a href="widgets.php">
                         <i class="icon-list-alt"></i>
                         <span>Widgets</span>
                         
@@ -309,7 +309,7 @@
 
                     
                     <li>
-                      <a href="calendar.html">
+                      <a href="calendar.php">
                         <i class="icon-calendar"></i>
                         <span>Calendar</span>
                         
@@ -318,7 +318,7 @@
 
                     
                     <li>
-                      <a href="gallery.html">
+                      <a href="gallery.php">
                         <i class="icon-picture"></i>
                         <span>Gallery</span>
                         
@@ -327,7 +327,7 @@
 
                     
                     <li>
-                      <a href="grid.html">
+                      <a href="grid.php">
                         <i class="icon-th"></i>
                         <span>Grid</span>
                         
@@ -342,12 +342,12 @@
                         <b class="arrow icon-angle-down"></b>
                       </a>
                       <ul class="submenu">
-                        <li><a href="pricing.html"><i class="icon-double-angle-right"></i> Pricing Tables</a></li>
-                        <li><a href="invoice.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
-                        <li><a href="login.html"><i class="icon-double-angle-right"></i> Login & Register</a></li>
-                        <li><a href="error-404.html"><i class="icon-double-angle-right"></i> Error 404</a></li>
-                        <li><a href="error-500.html"><i class="icon-double-angle-right"></i> Error 500</a></li>
-                        <li><a href="blank.html"><i class="icon-double-angle-right"></i> Blank Page</a></li>
+                        <li><a href="pricing.php"><i class="icon-double-angle-right"></i> Pricing Tables</a></li>
+                        <li><a href="invoice.php"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                        <li><a href="login.php"><i class="icon-double-angle-right"></i> Login & Register</a></li>
+                        <li><a href="error-404.php"><i class="icon-double-angle-right"></i> Error 404</a></li>
+                        <li><a href="error-500.php"><i class="icon-double-angle-right"></i> Error 500</a></li>
+                        <li><a href="blank.php"><i class="icon-double-angle-right"></i> Blank Page</a></li>
                       </ul>
                     </li>
 
