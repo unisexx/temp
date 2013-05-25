@@ -3,43 +3,26 @@
 	<head>
 		<base href="<?php echo base_url(); ?>" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><?php echo $template['title']; ?></title> 
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<?php include_once '_css.php'; ?>
+		<?php include_once "_css.php"; ?>
+		<?php include_once"_script.php"?>
 	</head>
 	<body>
-        <?php include_once '_header.php'; ?>
+        <?php include_once "_header.php"; ?>
 
         <div class="container-fluid" id="main-container">
             <a href="#" id="menu-toggler"><span></span></a><!-- menu toggler -->
             
-            <?php include_once '_menu.php'?>
+            <?php include_once "_menu.php"?>
             <div id="main-content" class="clearfix">
+                    <?php echo create_breadcrumb_admin()?>
                     
-                    <div id="breadcrumbs">
-                        <ul class="breadcrumb">
-                            <li><i class="icon-home"></i> <a href="#">Home</a><span class="divider"><i class="icon-angle-right"></i></span></li>
-                            <li><a href="#">Other Pages</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
-                            <li class="active">Blank Page</li>
-                        </ul><!--.breadcrumb-->
-
-                        <div id="nav-search">
-                            <form class="form-search">
-                                    <span class="input-icon">
-                                        <input autocomplete="off" id="nav-search-input" type="text" class="input-small search-query" placeholder="Search ..." />
-                                        <i id="nav-search-icon" class="icon-search"></i>
-                                    </span>
-                            </form>
-                        </div><!--#nav-search-->
-                    </div><!--#breadcrumbs-->
-
-
-
                     <div id="page-content" class="clearfix">
-                        <div class="row-fluid">
-<!-- PAGE CONTENT BEGINS HERE -->
-<!-- PAGE CONTENT ENDS HERE -->
-                         </div><!--/row-->
+                        <!-- PAGE CONTENT BEGINS HERE -->
+                        <?php echo $template['body']; ?>
+                        <!-- PAGE CONTENT ENDS HERE -->
                     </div><!--/#page-content-->
                       
 
@@ -71,7 +54,5 @@
         <a href="#" id="btn-scroll-up" class="btn btn-small btn-inverse">
             <i class="icon-double-angle-up icon-only"></i>
         </a>
-        
-        <?php include"_script.php"?>
 	</body>
 </html>

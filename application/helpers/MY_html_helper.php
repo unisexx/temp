@@ -25,10 +25,10 @@ if(!function_exists('menu_active'))
         $CI =& get_instance();
         if($controller)
         {
-            return ($CI->router->fetch_module() == $module && $CI->router->fetch_class() == $controller) ? 'class='.$class : '';    
+            return ($CI->router->fetch_module() == $module && $CI->router->fetch_class() == $controller) ? 'class="'.$class.'"' : '';    
         }
         elseif($method){
-            return ($CI->router->fetch_module() == $module && $CI->router->fetch_method() == $method) ? 'class='.$class : '';  
+            return ($CI->router->fetch_module() == $module && $CI->router->fetch_method() == $method) ? 'class="'.$class.'"' : '';  
         }
         else
         {
@@ -63,6 +63,35 @@ if(!function_exists('get_option'))
 		foreach($query->result() as $item) $option[$item->{$value}] = lang_decode($item->{$text},$lang);
 		return $option;
 	}
+}
+
+if(!function_exists('create_breadcrumb')){
+function create_breadcrumb_admin(){
+  $ci = &get_instance();
+  $i=3;
+  $uri = $ci->uri->segment($i);
+  $link = '<div id="breadcrumbs"><ul class="breadcrumb"><li><i class="icon-home"></i> <a href="admin/">Home</a><span class="divider"><i class="icon-angle-right"></i></span></li>';
+ 
+  while($uri != ''){
+    $prep_link = '';
+  for($j=1; $j<=$i;$j++){
+    $prep_link .= $ci->uri->segment($j).'/';
+  }
+ 
+  if($ci->uri->segment($i+1) == ''){
+    $link.=' <li class="active">';
+    $link.=$ci->uri->segment($i).'</li>';
+  }else{
+    $link.='<li><a href="'.site_url($prep_link).'">';
+    $link.=$ci->uri->segment($i).'</a> <span class="divider"><i class="icon-angle-right"></i></span></li>';
+  }
+ 
+  $i++;
+  $uri = $ci->uri->segment($i);
+  }
+    $link .= '</ul></div>';
+    return $link;
+  }
 }
 
 function fix_file(&$files)
