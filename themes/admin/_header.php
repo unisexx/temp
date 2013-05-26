@@ -188,7 +188,7 @@
                         <a class="user-menu dropdown-toggle" href="#" data-toggle="dropdown">
                             <img alt="Jason's Photo" src="themes/admin/media/images/user.jpg" class="nav-user-photo" />
                             <span id="user_info">
-                                <small>Welcome,</small> Jason
+                                <small>Welcome,</small> <?php echo user()->username ?>
                             </span>
                             <i class="icon-caret-down"></i>
                         </a>
@@ -196,7 +196,7 @@
                             <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
                             <li><a href="#"><i class="icon-user"></i> Profile</a></li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="icon-off"></i> Logout</a></li>
+                            <li><a href="users/admin/auth/logout" onclick="return confirm('Do you want to logout?')"><i class="icon-off"></i> Logout</a></li>
                         </ul>
                     </li>
 
