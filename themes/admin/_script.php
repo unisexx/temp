@@ -40,6 +40,7 @@ window.jQuery || document.write("<script src='media/js/jquery-1.9.1.min.js'>\x3C
 <script type="text/javascript" src="themes/admin/media/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="themes/admin/media/js/fullcalendar.min.js"></script>
 <script type="text/javascript" src="themes/admin/media/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="themes/admin/media/js/fuelux.tree.min.js"></script>
 
 <!-- ace scripts -->
 <script src="themes/admin/media/js/ace-elements.min.js"></script>

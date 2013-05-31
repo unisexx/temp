@@ -21,6 +21,10 @@ class Demo extends Admin_Controller
         $this->template->build('admin/buttons');
     }
     
+    function treeview(){
+        $this->template->build('admin/treeview');
+    }
+    
     function tables(){
         $this->template->build('admin/tables');
     }

@@ -30,7 +30,7 @@
         </li>
 
         
-        <li <?php echo menu_active('demo',false,'elements')?> <?php echo menu_active('demo',false,'buttons')?>>
+        <li <?php echo menu_active('demo',false,'elements','active open')?> <?php echo menu_active('demo',false,'buttons','active open')?> <?php echo menu_active('demo',false,'treeview','active open')?>>
           <a href="#" class="dropdown-toggle" >
             <i class="icon-desktop"></i>
             <span>UI Elements</span>
@@ -39,6 +39,7 @@
           <ul class="submenu">
             <li <?php echo menu_active('demo',false,'elements')?>><a href="demo/admin/demo/elements"><i class="icon-double-angle-right"></i> Elements</a></li>
             <li <?php echo menu_active('demo',false,'buttons')?>><a href="demo/admin/demo/buttons"><i class="icon-double-angle-right"></i> Buttons & Icons</a></li>
+            <li <?php echo menu_active('demo',false,'treeview')?>><a href="demo/admin/demo/treeview"><i class="icon-double-angle-right"></i> Treeview</a></li>
           </ul>
         </li>
 
