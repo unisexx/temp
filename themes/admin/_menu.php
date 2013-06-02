@@ -53,7 +53,7 @@
         </li>
 
         
-        <li <?php echo menu_active('demo',false,'form_elements','active open')?> <?php echo menu_active('demo',false,'form_wizard','active open')?>>
+        <li <?php echo menu_active('demo',false,'form_elements','active open')?> <?php echo menu_active('demo',false,'form_wizard','active open')?> <?php echo menu_active('demo',false,'wysiwyg','active open')?>>
           <a href="#" class="dropdown-toggle" >
             <i class="icon-edit"></i>
             <span>Forms</span>
@@ -62,6 +62,7 @@
           <ul class="submenu">
             <li <?php echo menu_active('demo',false,'form_elements')?>><a href="demo/admin/demo/form_elements"><i class="icon-double-angle-right"></i> Form Elements</a></li>
             <li <?php echo menu_active('demo',false,'form_wizard')?>><a href="demo/admin/demo/form_wizard"><i class="icon-double-angle-right"></i> Wizard & Validation</a></li>
+            <li <?php echo menu_active('demo',false,'wysiwyg')?>><a href="demo/admin/demo/wysiwyg"><i class="icon-double-angle-right"></i> Wysiwyg & Markdown</a></li>
           </ul>
         </li>
 

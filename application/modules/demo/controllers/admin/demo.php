@@ -37,6 +37,10 @@ class Demo extends Admin_Controller
         $this->template->build('admin/form-wizard');
     }
     
+    function wysiwyg(){
+        $this->template->build('admin/wysiwyg');
+    }
+    
     function widgets(){
         $this->template->build('admin/widgets');
     }
